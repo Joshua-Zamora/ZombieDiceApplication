@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="750.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.classicController">
+   <children>
+      <Button layoutX="14.0" layoutY="542.0" mnemonicParsing="false" onAction="#rulesFXML" prefHeight="44.0" prefWidth="76.0" style="-fx-background-color: #32CD32;" text="BACK" textFill="#0a0a0a">
+         <font>
+            <Font name="MV Boli" size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.5" height="65.0" radius="32.0" width="65.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="600.0" layoutY="542.0" mnemonicParsing="false" onAction="#menuFXML" prefHeight="44.0" prefWidth="136.0" style="-fx-background-color: #ff0000;" text="MAIN MENU" textFill="#0a0a0a">
+         <font>
+            <Font name="MV Boli" size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.5" height="65.0" radius="32.0" width="65.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text layoutX="227.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CLASSIC">
+         <font>
+            <Font name="Papyrus" size="50.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#31d000" />
+                  <Stop color="RED" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+      </Text>
+      <Text fill="WHITE" layoutX="265.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="On your turn you roll only 3 die." textAlignment="CENTER">
+         <font>
+            <Font name="MV Boli" size="14.0" />
+         </font>
+         <effect>
+            <Glow level="0.65" />
+         </effect>
+      </Text>
+      <Text fill="WHITE" layoutX="143.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Green dice are the easiest. Yellow are medium. Red are the hardest." textAlignment="CENTER">
+         <font>
+            <Font name="MV Boli" size="14.0" />
+         </font>
+         <effect>
+            <Glow level="0.65" />
+         </effect>
+      </Text>
+      <Text fill="WHITE" layoutX="278.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The dice have three symbols:" textAlignment="CENTER">
+         <font>
+            <Font name="MV Boli" size="14.0" />
+         </font>
+         <effect>
+            <Glow level="0.65" />
+         </effect>
+      </Text>
+      <ImageView fx:id="greenBrain" fitHeight="75.0" fitWidth="75.0" layoutX="203.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="yellowFeet" fitHeight="75.0" fitWidth="75.0" layoutX="337.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="redShotgun" fitHeight="75.0" fitWidth="75.0" layoutX="471.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true" />
+      <Text fill="WHITE" layoutX="195.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Each rolled brain is 1 point towards your overall score." textAlignment="CENTER">
+         <font>
+            <Font name="MV Boli" size="14.0" />
+         </font>
+         <effect>
+            <Glow level="0.65" />
+         </effect>
+      </Text>
+      <Text fill="WHITE" layoutX="151.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If you choose to roll again, you will re-roll feet. Along with enough new ones to bring the total to three." textAlignment="CENTER" wrappingWidth="446.857421875">
+         <font>
+            <Font name="MV Boli" size="14.0" />
+         </font>
+         <effect>
+            <Glow level="0.65" />
+         </effect>
+      </Text>
+      <Text fill="WHITE" layoutX="123.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If you roll three shotguns, your turn is over. Otherwise, you can choose to stop and score your curent brains, or continue and risk losing them." textAlignment="CENTER" wrappingWidth="503.8837890625">
+         <font>
+            <Font name="MV Boli" size="14.0" />
+         </font>
+         <effect>
+            <Glow level="0.65" />
+         </effect>
+      </Text>
+      <Text fill="WHITE" layoutX="146.0" layoutY="469.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Once 13 brains are scored, whoever has the most Brains at the end of that round is the winner. If there is a tie, only the leaders play a tiebreaker round." textAlignment="CENTER" wrappingWidth="456.728515625">
+         <font>
+            <Font name="MV Boli" size="14.0" />
+         </font>
+         <effect>
+            <Glow level="0.65" />
+         </effect>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="750.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.accountController">
+   <children>
+      <Label layoutX="212.0" prefHeight="61.0" prefWidth="326.0" text="ACCOUNTS" textFill="#655858">
+         <font>
+            <Font name="Papyrus" size="40.0" />
+         </font>
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+      </Label>
+      <Button layoutX="14.0" layoutY="545.0" mnemonicParsing="false" onAction="#menuFXML" prefHeight="44.0" prefWidth="76.0" style="-fx-background-color: #32CD32;" text="BACK" textFill="#0a0a0a">
+         <font>
+            <Font name="MV Boli" size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.5" height="65.0" radius="32.0" width="65.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <GridPane layoutX="22.0" layoutY="90.0" prefHeight="223.0" prefWidth="713.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="220.0" minWidth="10.0" prefWidth="112.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="308.0" minWidth="10.0" prefWidth="102.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="262.0" minWidth="10.0" prefWidth="105.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="262.0" minWidth="10.0" prefWidth="65.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="280.0" minWidth="10.0" prefWidth="111.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="122.0" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="156.0" minWidth="10.0" prefWidth="117.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button fx:id="c1" alignment="CENTER" mnemonicParsing="false" onAction="#createAccountOne" prefHeight="26.0" prefWidth="99.0" style="-fx-background-color: #ff7000;" text="CREATE" textFill="#080808" GridPane.columnIndex="1">
+               <font>
+                  <Font name="MV Boli" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="0.5" height="65.0" radius="32.0" width="65.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="c2" alignment="CENTER" layoutX="165.0" layoutY="21.0" mnemonicParsing="false" onAction="#createAccountTwo" prefHeight="26.0" prefWidth="99.0" style="-fx-background-color: #ff7000;" text="CREATE" textFill="#080808" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="MV Boli" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="0.5" height="65.0" radius="32.0" width="65.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="c3" alignment="CENTER" layoutX="165.0" layoutY="77.0" mnemonicParsing="false" onAction="#createAccountThree" prefHeight="26.0" prefWidth="99.0" style="-fx-background-color: #ff7000;" text="CREATE" textFill="#080808" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="MV Boli" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="0.5" height="65.0" radius="32.0" width="65.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="c4" alignment="CENTER" layoutX="165.0" layoutY="133.0" mnemonicParsing="false" onAction="#createAccountFour" prefHeight="26.0" prefWidth="99.0" style="-fx-background-color: #ff7000;" text="CREATE" textFill="#080808" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="MV Boli" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="0.5" height="65.0" radius="32.0" width="65.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="c5" alignment="CENTER" layoutX="165.0" layoutY="188.0" mnemonicParsing="false" onAction="#createAccountFive" prefHeight="26.0" prefWidth="99.0" style="-fx-background-color: #ff7000;" text="CREATE" textFill="#080808" GridPane.columnIndex="5">
+               <font>
+                  <Font name="MV Boli" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="0.5" height="65.0" radius="32.0" width="65.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="c6" alignment="CENTER" layoutX="474.0" layoutY="21.0" mnemonicParsing="false" onAction="#createAccountSix" prefHeight="26.0" prefWidth="99.0" style="-fx-background-color: #ff7000;" text="CREATE" textFill="#080808" GridPane.columnIndex="5" GridPane.rowIndex="1">
+               <font>
+                  <Font name="MV Boli" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="0.5" height="65.0" radius="32.0" width="65.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="c7" alignment="CENTER" layoutX="474.0" layoutY="77.0" mnemonicParsing="false" onAction="#createAccountSeven" prefHeight="26.0" prefWidth="99.0" style="-fx-background-color: #ff7000;" text="CREATE" textFill="#080808" GridPane.columnIndex="5" GridPane.rowIndex="2">
+               <font>
+                  <Font name="MV Boli" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="0.5" height="65.0" radius="32.0" width="65.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="c8" alignment="CENTER" layoutX="474.0" layoutY="133.0" mnemonicParsing="false" onAction="#createAccountEight" prefHeight="26.0" prefWidth="99.0" style="-fx-background-color: #ff7000;" text="CREATE" textFill="#080808" GridPane.columnIndex="5" GridPane.rowIndex="3">
+               <font>
+                  <Font name="MV Boli" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="0.5" height="65.0" radius="32.0" width="65.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="a1" alignment="CENTER" disable="true" mnemonicParsing="false" onAction="#openAccountOne" prefHeight="35.0" prefWidth="108.0" style="-fx-background-color: #ffff00;" text="ACCOUNT 1" textFill="#0a0a0a">
+               <font>
+                  <Font name="MV Boli" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="0.5" height="65.0" radius="32.0" width="65.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="d1" alignment="CENTER" disable="true" mnemonicParsing="false" onAction="#deleteAccountOne" prefHeight="35.0" prefWidth="108.0" style="-fx-background-color: #ff0000;" text="DELETE" textFill="#0a0a0a" GridPane.columnIndex="2">
+               <font>
+                  <Font name="MV Boli" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="0.5" height="65.0" radius="32.0" width="65.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="d2" alignment="CENTER" disable="true" layoutX="193.0" layoutY="21.0" mnemonicParsing="false" onAction="#deleteAccountTwo" prefHeight="35.0" prefWidth="108.0" style="-fx-background-color: #ff0000;" text="DELETE" textFill="#0a0a0a" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="MV Boli" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="0.5" height="65.0" radius="32.0" width="65.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="d3" alignment="CENTER" disable="true" layoutX="193.0" layoutY="77.0" mnemonicParsing="false" onAction="#deleteAccountThree" prefHeight="35.0" prefWidth="108.0" style="-fx-background-color: #ff0000;" text="DELETE" textFill="#0a0a0a" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="MV Boli" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="0.5" height="65.0" radius="32.0" width="65.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="d4" alignment="CENTER" disable="true" layoutX="193.0" layoutY="133.0" mnemonicParsing="false" onAction="#deleteAccountFour" prefHeight="35.0" prefWidth="108.0" style="-fx-background-color: #ff0000;" text="DELETE" textFill="#0a0a0a" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="MV Boli" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="0.5" height="65.0" radius="32.0" width="65.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="a2" alignment="CENTER" disable="true" mnemonicParsing="false" onAction="#openAccountTwo" prefHeight="35.0" prefWidth="108.0" style="-fx-background-color: #ffff00;" text="ACCOUNT 2" textFill="#0a0a0a" GridPane.rowIndex="1">
+               <font>
+                  <Font name="MV Boli" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="0.5" height="65.0" radius="32.0" width="65.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="a3" alignment="CENTER" disable="true" mnemonicParsing="false" onAction="#openAccountThree" prefHeight="35.0" prefWidth="108.0" style="-fx-background-color: #ffff00;" text="ACCOUNT 3" textFill="#0a0a0a" GridPane.rowIndex="2">
+               <font>
+                  <Font name="MV Boli" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="0.5" height="65.0" radius="32.0" width="65.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="a4" alignment="CENTER" disable="true" mnemonicParsing="false" onAction="#openAccountFour" prefHeight="35.0" prefWidth="108.0" style="-fx-background-color: #ffff00;" text="ACCOUNT 4" textFill="#0a0a0a" GridPane.rowIndex="3">
+               <font>
+                  <Font name="MV Boli" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="0.5" height="65.0" radius="32.0" width="65.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="a5" alignment="CENTER" disable="true" mnemonicParsing="false" onAction="#openAccountFive" prefHeight="35.0" prefWidth="108.0" style="-fx-background-color: #ffff00;" text="ACCOUNT 5" textFill="#0a0a0a" GridPane.columnIndex="4">
+               <font>
+                  <Font name="MV Boli" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="0.5" height="65.0" radius="32.0" width="65.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="a6" alignment="CENTER" disable="true" mnemonicParsing="false" onAction="#openAccountSix" prefHeight="35.0" prefWidth="108.0" style="-fx-background-color: #ffff00;" text="ACCOUNT 6" textFill="#0a0a0a" GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <font>
+                  <Font name="MV Boli" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="0.5" height="65.0" radius="32.0" width="65.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="a7" alignment="CENTER" disable="true" mnemonicParsing="false" onAction="#openAccountSeven" prefHeight="35.0" prefWidth="108.0" style="-fx-background-color: #ffff00;" text="ACCOUNT 7" textFill="#0a0a0a" GridPane.columnIndex="4" GridPane.rowIndex="2">
+               <font>
+                  <Font name="MV Boli" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="0.5" height="65.0" radius="32.0" width="65.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="a8" alignment="CENTER" disable="true" mnemonicParsing="false" onAction="#openAccountEight" prefHeight="35.0" prefWidth="108.0" style="-fx-background-color: #ffff00;" text="ACCOUNT 8" textFill="#0a0a0a" GridPane.columnIndex="4" GridPane.rowIndex="3">
+               <font>
+                  <Font name="MV Boli" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="0.5" height="65.0" radius="32.0" width="65.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="d5" alignment="CENTER" disable="true" layoutX="212.0" layoutY="21.0" mnemonicParsing="false" onAction="#deleteAccountFive" prefHeight="35.0" prefWidth="108.0" style="-fx-background-color: #ff0000;" text="DELETE" textFill="#0a0a0a" GridPane.columnIndex="6">
+               <font>
+                  <Font name="MV Boli" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="0.5" height="65.0" radius="32.0" width="65.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="d6" alignment="CENTER" disable="true" layoutX="626.0" layoutY="21.0" mnemonicParsing="false" onAction="#deleteAccountSix" prefHeight="35.0" prefWidth="108.0" style="-fx-background-color: #ff0000;" text="DELETE" textFill="#0a0a0a" GridPane.columnIndex="6" GridPane.rowIndex="1">
+               <font>
+                  <Font name="MV Boli" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="0.5" height="65.0" radius="32.0" width="65.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="d7" alignment="CENTER" disable="true" layoutX="626.0" layoutY="77.0" mnemonicParsing="false" onAction="#deleteAccountSeven" prefHeight="35.0" prefWidth="108.0" style="-fx-background-color: #ff0000;" text="DELETE" textFill="#0a0a0a" GridPane.columnIndex="6" GridPane.rowIndex="2">
+               <font>
+                  <Font name="MV Boli" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="0.5" height="65.0" radius="32.0" width="65.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="d8" alignment="CENTER" disable="true" layoutX="626.0" layoutY="133.0" mnemonicParsing="false" onAction="#deleteAccountEight" prefHeight="35.0" prefWidth="108.0" style="-fx-background-color: #ff0000;" text="DELETE" textFill="#0a0a0a" GridPane.columnIndex="6" GridPane.rowIndex="3">
+               <font>
+                  <Font name="MV Boli" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="0.5" height="65.0" radius="32.0" width="65.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </GridPane>
+      <Label fx:id="usernameLabel" layoutX="213.0" layoutY="379.0" text="Enter Username:" textFill="#c5c5c5" visible="false">
+         <font>
+            <Font name="Papyrus" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="passwordLabel" layoutX="216.0" layoutY="431.0" text="Enter Password:" textFill="#c6c6c6" visible="false">
+         <font>
+            <Font name="Papyrus" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="confirmCreate" layoutX="262.0" layoutY="491.0" mnemonicParsing="false" onAction="#createUniversal" prefHeight="44.0" prefWidth="85.0" style="-fx-background-color: #32CD32;" text="CONFIRM" textFill="#0a0a0a" visible="false">
+         <font>
+            <Font name="MV Boli" size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.5" height="65.0" radius="32.0" width="65.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="cancelCreate" layoutX="411.0" layoutY="491.0" mnemonicParsing="false" onAction="#cancelUniversal" prefHeight="44.0" prefWidth="85.0" style="-fx-background-color: #999999;" text="CANCEL" textFill="#0a0a0a" visible="false">
+         <font>
+            <Font name="MV Boli" size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.5" height="65.0" radius="32.0" width="65.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Pane fx:id="passwordFade" layoutX="347.0" layoutY="429.0" prefHeight="35.0" prefWidth="191.0" visible="false">
+         <children>
+            <TextField fx:id="password" layoutX="21.0" layoutY="2.0" visible="false" />
+         </children>
+         <effect>
+            <InnerShadow choke="0.22" height="38.79" radius="21.86" width="50.65" />
+         </effect>
+      </Pane>
+      <Pane fx:id="userNameFade" layoutX="347.0" layoutY="376.0" prefHeight="35.0" prefWidth="191.0" visible="false">
+         <children>
+            <TextField fx:id="userName" layoutX="21.0" layoutY="2.0" visible="false" />
+         </children>
+         <effect>
+            <InnerShadow choke="0.22" height="38.79" radius="21.86" width="50.65" />
+         </effect>
+      </Pane>
+      <Text layoutX="54.0" layoutY="480.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="308.13671875" />
+      <Button fx:id="confirmDelete" layoutX="262.0" layoutY="491.0" mnemonicParsing="false" onAction="#deleteUniversal" prefHeight="44.0" prefWidth="85.0" style="-fx-background-color: #ff0000;" text="CONFIRM" textFill="#0a0a0a" visible="false">
+         <font>
+            <Font name="MV Boli" size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.5" height="65.0" radius="32.0" width="65.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="cancelDelete" layoutX="411.0" layoutY="491.0" mnemonicParsing="false" onAction="#cancelUniversal" prefHeight="44.0" prefWidth="85.0" style="-fx-background-color: #999999;" text="CANCEL" textFill="#0a0a0a" visible="false">
+         <font>
+            <Font name="MV Boli" size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.5" height="65.0" radius="32.0" width="65.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text fx:id="accountCreationLabel" fill="#655858" layoutX="229.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CREATE" textAlignment="CENTER" visible="false" wrappingWidth="291.9921875">
+         <font>
+            <Font name="Papyrus" size="18.0" />
+         </font>
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+      </Text>
+      <Text fx:id="accountDeletionLabel" fill="#655858" layoutX="208.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DELETE" textAlignment="CENTER" visible="false" wrappingWidth="341.99999755620956">
+         <font>
+            <Font name="Papyrus" size="18.0" />
+         </font>
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+      </Text>
+      <Label fx:id="note" layoutX="199.0" layoutY="545.0" text="Note: Username &amp; Password length limited to 1-7 characters" textFill="#333333" visible="false">
+         <font>
+            <Font name="Papyrus" size="14.0" />
+         </font></Label>
+      <Label fx:id="passwordWarning" layoutX="531.0" layoutY="433.0" text="Too Long!" textFill="#680000" visible="false">
+         <font>
+            <Font name="Papyrus" size="12.0" />
+         </font></Label>
+      <Label fx:id="userNameWarning" layoutX="531.0" layoutY="381.0" text="Too Long!" textFill="#680000" visible="false">
+         <font>
+            <Font name="Papyrus" size="12.0" />
+         </font></Label>
+      <Label fx:id="passwordLabelDelete" layoutX="245.0" layoutY="414.0" text="Enter Password:" textFill="#c6c6c6" visible="false">
+         <font>
+            <Font name="Papyrus" size="14.0" />
+         </font>
+      </Label>
+      <Pane fx:id="passwordFade1" layoutX="362.0" layoutY="416.0" prefHeight="35.0" prefWidth="191.0" visible="false">
+         <children>
+            <TextField fx:id="password1" layoutX="21.0" layoutY="2.0" visible="false" />
+         </children>
+         <effect>
+            <InnerShadow choke="0.22" height="38.79" radius="21.86" width="50.65" />
+         </effect>
+      </Pane>
+      <Label fx:id="passwordWarning1" layoutX="553.0" layoutY="416.0" text="Does not match!" textFill="#680000" visible="false">
+         <font>
+            <Font name="Papyrus" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

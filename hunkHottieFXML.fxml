@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="750.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.hunkHottieController">
+   <children>
+      <Button layoutX="14.0" layoutY="542.0" mnemonicParsing="false" onAction="#rulesFXML" prefHeight="44.0" prefWidth="76.0" style="-fx-background-color: #32CD32;" text="BACK" textFill="#0a0a0a">
+         <font>
+            <Font name="MV Boli" size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.5" height="65.0" radius="32.0" width="65.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="600.0" layoutY="542.0" mnemonicParsing="false" onAction="#menuFXML" prefHeight="44.0" prefWidth="136.0" style="-fx-background-color: #ff0000;" text="MAIN MENU" textFill="#0a0a0a">
+         <font>
+            <Font name="MV Boli" size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.5" height="65.0" radius="32.0" width="65.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text layoutX="122.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HUNK / HOTTIE">
+         <font>
+            <Font name="Papyrus" size="50.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="#ff00a1" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+      </Text>
+      <Text fill="WHITE" layoutX="226.0" layoutY="133.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Hunk is the black die with white icons. " textAlignment="CENTER" wrappingWidth="298.8193359375">
+         <font>
+            <Font name="MV Boli" size="14.0" />
+         </font>
+         <effect>
+            <Glow level="0.65" />
+         </effect>
+      </Text>
+      <Text fill="WHITE" layoutX="224.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Hottie is the black die with pink icons. " textAlignment="CENTER" wrappingWidth="298.8193359375">
+         <font>
+            <Font name="MV Boli" size="14.0" />
+         </font>
+         <effect>
+            <Glow level="0.65" />
+         </effect>
+      </Text>
+      <Text fill="WHITE" layoutX="207.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="**The Hunk and Hottie replace two yellow dice.**" textAlignment="CENTER" wrappingWidth="336.8193359375">
+         <font>
+            <Font name="MV Boli" size="14.0" />
+         </font>
+         <effect>
+            <Glow level="0.65" />
+         </effect>
+      </Text>
+      <Text fill="WHITE" layoutX="256.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Symbols on the two Heroes are:" textAlignment="CENTER" wrappingWidth="237.8193359375">
+         <font>
+            <Font name="MV Boli" size="14.0" />
+         </font>
+         <effect>
+            <Glow level="0.65" />
+         </effect>
+      </Text>
+      <Text fill="WHITE" layoutX="276.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Brains, shotguns, and feet. But with a twist!" textAlignment="CENTER" wrappingWidth="197.8193359375">
+         <font>
+            <Font name="MV Boli" size="14.0" />
+         </font>
+         <effect>
+            <Glow level="0.65" />
+         </effect>
+      </Text>
+      <Text fill="#ff009d" layoutX="188.0" layoutY="368.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Heroes can rescue each other from the zombies. " textAlignment="CENTER" wrappingWidth="372.8193359375">
+         <font>
+            <Font name="MV Boli" size="14.0" />
+         </font>
+         <effect>
+            <Glow level="0.65" />
+         </effect>
+      </Text>
+      <Text fill="WHITE" layoutX="199.0" layoutY="393.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If the Hunk rolls shotguns and the Hottie is in the brain pile (or came up “brain” on the same roll), the Hottie is rescued so you don't score that die. And Vise Versa." textAlignment="CENTER" wrappingWidth="347.8193359375">
+         <font>
+            <Font name="MV Boli" size="14.0" />
+         </font>
+         <effect>
+            <Glow level="0.65" />
+         </effect>
+      </Text>
+      <ImageView fx:id="hottieBrain" fitHeight="100.0" fitWidth="100.0" layoutX="52.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="hunkShotgun" fitHeight="100.0" fitWidth="100.0" layoutX="600.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
