@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="750.0" style="-fx-background-color: #000000;" stylesheets="@zombieSheet.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.rulesController">
+   <children>
+      <Label layoutX="285.0" prefHeight="0.0" prefWidth="181.0" text="RULES" textFill="#655858">
+         <font>
+            <Font name="Papyrus" size="40.0" />
+         </font>
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+      </Label>
+      <Button layoutX="14.0" layoutY="542.0" mnemonicParsing="false" onAction="#menuFXML" prefHeight="44.0" prefWidth="76.0" style="-fx-background-color: #32CD32;" text="BACK" textFill="#0a0a0a">
+         <font>
+            <Font name="MV Boli" size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.5" height="65.0" radius="32.0" width="65.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="classic" layoutX="318.0" layoutY="313.0" mnemonicParsing="false" onAction="#classicFXML" prefHeight="52.0" prefWidth="114.0" style="-fx-background-color: #000000; -fx-border-color: #0a0a0a;" text="CLASSIC">
+         <font>
+            <Font name="MV Boli" size="20.0" />
+         </font>
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#7eff56" />
+                  <Stop color="#fc2d2d" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="bus" layoutX="290.0" layoutY="167.0" mnemonicParsing="false" onAction="#schoolBusFXML" prefHeight="52.0" prefWidth="171.0" style="-fx-background-color: #000000; -fx-border-color: #0a0a0a;" text="SCHOOLBUS">
+         <font>
+            <Font name="MV Boli" size="23.0" />
+         </font>
+         <effect>
+            <Glow level="0.8" />
+         </effect>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#fff600" />
+                  <Stop color="#333600" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="hunkHottie" layoutX="502.0" layoutY="237.0" mnemonicParsing="false" onAction="#hunkHottieFXML" prefHeight="50.0" prefWidth="171.0" style="-fx-background-color: #000000; -fx-border-color: #0a0a0a;" text="HUNK/HOTTIE">
+         <font>
+            <Font name="MV Boli" size="20.0" />
+         </font>
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="WHITE" />
+                  <Stop color="#ff00a1" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="santa" layoutX="128.0" layoutY="237.0" mnemonicParsing="false" onAction="#santaFXML" prefHeight="52.0" prefWidth="114.0" style="-fx-background-color: #000000; -fx-border-color: #0a0a0a;" text="SANTA">
+         <font>
+            <Font name="MV Boli" size="20.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="RED" />
+                  <Stop color="#4d0000" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <AnchorPane layoutX="85.0" layoutY="356.0" prefHeight="61.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="convict" disable="true" layoutX="25.0" layoutY="6.0" mnemonicParsing="false" onAction="#convictFXML" prefHeight="27.0" prefWidth="151.0" style="-fx-background-color: #000000; -fx-border-color: #0a0a0a;" text="CONVICT" textFill="#ff9000">
+               <font>
+                  <Font name="MV Boli" size="20.0" />
+               </font>
+               <effect>
+                  <Glow level="1.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+         <effect>
+            <GaussianBlur radius="12.0" />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="402.0" layoutY="457.0" prefHeight="61.0" prefWidth="200.0">
+         <effect>
+            <GaussianBlur radius="12.0" />
+         </effect>
+         <children>
+            <Button fx:id="scientist" disable="true" layoutX="25.0" layoutY="6.0" mnemonicParsing="false" onAction="#scientistFXML" prefHeight="50.0" prefWidth="151.0" style="-fx-background-color: #000000; -fx-border-color: #0a0a0a;" text="SCIENTIST" textFill="#00bbff">
+               <font>
+                  <Font name="MV Boli" size="20.0" />
+               </font>
+               <effect>
+                  <Glow level="1.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="148.0" layoutY="451.0" prefHeight="61.0" prefWidth="200.0">
+         <effect>
+            <GaussianBlur radius="12.0" />
+         </effect>
+         <children>
+            <Button fx:id="spaceShip" disable="true" layoutX="20.0" layoutY="1.0" mnemonicParsing="false" onAction="#spaceShipFXML" prefHeight="73.0" prefWidth="160.0" style="-fx-background-color: #000000; -fx-border-color: #0a0a0a;" text="SPACESHIP" textFill="#70ff5a">
+               <font>
+                  <Font name="MV Boli" size="20.0" />
+               </font>
+               <effect>
+                  <Glow level="1.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="488.0" layoutY="339.0" prefHeight="91.0" prefWidth="200.0">
+         <effect>
+            <GaussianBlur radius="12.5" />
+         </effect>
+         <children>
+            <Button fx:id="train" disable="true" layoutX="8.0" layoutY="18.0" mnemonicParsing="false" onAction="#schoolBusFXML" prefHeight="31.0" prefWidth="171.0" style="-fx-background-color: #000000; -fx-border-color: #0a0a0a;" text="TRAIN" textFill="#ffba7d">
+               <font>
+                  <Font name="MV Boli" size="23.0" />
+               </font>
+               <effect>
+                  <Glow level="1.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

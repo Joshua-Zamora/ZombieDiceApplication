@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="750.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.schoolBusController">
+   <children>
+      <Button layoutX="14.0" layoutY="542.0" mnemonicParsing="false" onAction="#rulesFXML" prefHeight="44.0" prefWidth="76.0" style="-fx-background-color: #32CD32;" text="BACK" textFill="#0a0a0a">
+         <font>
+            <Font name="MV Boli" size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.5" height="65.0" radius="32.0" width="65.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="600.0" layoutY="542.0" mnemonicParsing="false" onAction="#menuFXML" prefHeight="44.0" prefWidth="136.0" style="-fx-background-color: #ff0000;" text="MAIN MENU" textFill="#0a0a0a">
+         <font>
+            <Font name="MV Boli" size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.5" height="65.0" radius="32.0" width="65.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text fill="WHITE" layoutX="198.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The School bus has 12 faces containing the following:" textAlignment="CENTER">
+         <font>
+            <Font name="MV Boli" size="14.0" />
+         </font>
+         <effect>
+            <Glow level="0.65" />
+         </effect>
+      </Text>
+      <Text layoutX="153.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SCHOOLBUS">
+         <font>
+            <Font name="Papyrus" size="50.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#fbff02" />
+                  <Stop color="#2e2f00" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </fill>
+         <effect>
+            <Glow level="0.6" />
+         </effect>
+      </Text>
+      <Text fill="WHITE" layoutX="304.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Brains and Shotguns." textAlignment="CENTER">
+         <font>
+            <Font name="MV Boli" size="14.0" />
+         </font>
+         <effect>
+            <Glow level="0.65" />
+         </effect>
+      </Text>
+      <Text fill="WHITE" layoutX="242.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your turn is over. If you're up to three Shotguns, you score nothing.   Otherwise, score the Brains you have." textAlignment="CENTER" wrappingWidth="266.892578125">
+         <font>
+            <Font name="MV Boli" size="14.0" />
+         </font>
+         <effect>
+            <Glow level="0.65" />
+         </effect>
+      </Text>
+      <Text fill="WHITE" layoutX="246.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="All Shotguns on this roll become Feet." textAlignment="CENTER">
+         <font>
+            <Font name="MV Boli" size="14.0" />
+         </font>
+         <effect>
+            <Glow level="0.65" />
+         </effect>
+      </Text>
+      <Text fill="WHITE" layoutX="251.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" All Feet on this roll become Brains." textAlignment="CENTER">
+         <font>
+            <Font name="MV Boli" size="14.0" />
+         </font>
+         <effect>
+            <Glow level="0.65" />
+         </effect>
+      </Text>
+      <Text fill="WHITE" layoutX="236.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RAN-OVER: Lose one rolled Brain. You can't roll the School Bus die any more on this turn." textAlignment="CENTER" wrappingWidth="320.1708984375">
+         <font>
+            <Font name="MV Boli" size="14.0" />
+         </font>
+         <effect>
+            <Glow level="0.65" />
+         </effect>
+      </Text>
+      <Text fill="#d7be00" layoutX="194.0" layoutY="457.0" strokeType="OUTSIDE" strokeWidth="0.0" text="While you are on the school bus you have two choices:" textAlignment="CENTER">
+         <font>
+            <Font name="MV Boli" size="14.0" />
+         </font>
+         <effect>
+            <Glow level="0.65" />
+         </effect>
+      </Text>
+      <Text fill="WHITE" layoutX="189.0" layoutY="489.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(1) Get Off. You can't ride the bus anymore this turn." textAlignment="CENTER">
+         <font>
+            <Font name="MV Boli" size="14.0" />
+         </font>
+         <effect>
+            <Glow level="0.65" />
+         </effect>
+      </Text>
+      <Text fill="WHITE" layoutX="191.0" layoutY="512.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(2) Stay but your currently rolled feet are discarded." textAlignment="CENTER">
+         <font>
+            <Font name="MV Boli" size="14.0" />
+         </font>
+         <effect>
+            <Glow level="0.65" />
+         </effect>
+      </Text>
+      <ImageView fx:id="stop" fitHeight="75.0" fitWidth="75.0" layoutX="502.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="yield" fitHeight="75.0" fitWidth="75.0" layoutX="161.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="deadEnd" fitHeight="75.0" fitWidth="75.0" layoutX="502.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="runOver" fitHeight="75.0" fitWidth="75.0" layoutX="161.0" layoutY="344.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
